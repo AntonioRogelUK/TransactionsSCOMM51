@@ -1,4 +1,4 @@
-﻿namespace SinTransaction.Entities
+﻿namespace ConTransaction.Entities
 {
     internal class VentaDetalle
     {

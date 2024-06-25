@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace SinTransaction
+namespace ConTransaction
 {
     internal static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
         static void Main()

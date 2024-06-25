@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SinTransaction.Entities
+namespace ConTransaction.Entities
 {
     internal class Venta
     {

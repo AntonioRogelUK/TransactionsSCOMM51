@@ -1,11 +1,6 @@
 ﻿using SinTransaction.Database;
-using SinTransaction.Entities;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinTransaction.Commands
 {
@@ -26,7 +21,7 @@ namespace SinTransaction.Commands
                         int foliosiguiente = 0;
                         bool sePudoConvertir = false;
                         sePudoConvertir = int.TryParse(resultado.ToString(), out foliosiguiente);
-                        if (!sePudoConvertir) 
+                        if (!sePudoConvertir)
                         {
                             throw new Exception("No se pudo obtener el folio");
                         }

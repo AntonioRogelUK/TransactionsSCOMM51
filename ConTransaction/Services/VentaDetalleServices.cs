@@ -1,4 +1,4 @@
-﻿namespace SinTransaction.Services
+﻿namespace ConTransaction.Services
 {
     internal class VentaDetalleServices
     {

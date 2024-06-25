@@ -1,11 +1,7 @@
 ﻿using SinTransaction.Database;
 using SinTransaction.Entities;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinTransaction.Commands
 {
@@ -20,7 +16,7 @@ namespace SinTransaction.Commands
                     string query = "insert into Ventas" +
                         "(Folio,Fecha,Cliente,Total) " +
                         "values" +
-                        "(@Folio,getDate(),@Cliente,@Total),@@Scope_Identity()";
+                        "(@Folio,getDate(),@Cliente,@Total); Select Scope_Identity()";
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.CommandType = System.Data.CommandType.Text;

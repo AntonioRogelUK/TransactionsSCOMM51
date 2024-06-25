@@ -1,9 +1,9 @@
-﻿using SinTransaction.Entities;
-using SinTransaction.Services;
+﻿using ConTransaction.Entities;
+using ConTransaction.Services;
 using System;
 using System.Windows.Forms;
 
-namespace SinTransaction
+namespace ConTransaction
 {
     public partial class Form1 : Form
     {

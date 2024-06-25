@@ -1,10 +1,6 @@
 ﻿using SinTransaction.Commands;
 using SinTransaction.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SinTransaction.Services
 {
@@ -34,6 +30,7 @@ namespace SinTransaction.Services
                     conceptoCommand.GuardarVentaDetalle(concepto);
 
                     renglon++;
+
 
                 }
 
