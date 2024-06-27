@@ -27,6 +27,15 @@ namespace ConTransaction.Services
 
                         foliosCommands.ActualizarFolio(con, tran);
 
+                        ClientesCommands clientesCommands = new ClientesCommands();
+                        clientesCommands.AltaCliente(con, "Nuevo Cliente", "correo@ejemplo.com");
+
+                        EmpleadosCommands empleadosCommands = new EmpleadosCommands();
+                        empleadosCommands.AltaEmpleado(con, "Nuevo Empleado", "Puesto de Nuevo Empleado");
+
+                        ProductosCommands productosCommands = new ProductosCommands();
+                        productosCommands.AltaProducto(con, tran, "Nuevo Producto", 100.00m, 50);
+
                         int renglon = 1;
                         foreach (VentaDetalle concepto in venta.Conceptos)
                         {
@@ -40,19 +49,18 @@ namespace ConTransaction.Services
                         }
 
                         tran.Commit();
-
                     }
                     catch (Exception ex)
                     {
                         tran.Rollback();
-                        throw new Exception(ex.Message);
+                        throw new Exception("Error al guardar la venta: " + ex.Message);
                     }
                 }
                 return venta.Folio;
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Error al guardar la venta: " + ex.Message);
             }
         }
     }
