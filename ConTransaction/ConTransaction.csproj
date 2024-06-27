@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\ClientesCommands.cs" />
+    <Compile Include="Commands\EmpleadosCommands.cs" />
     <Compile Include="Commands\FoliosCommands.cs" />
+    <Compile Include="Commands\ProductosCommands.cs" />
     <Compile Include="Commands\VentaCommand.cs" />
     <Compile Include="Commands\VentaDetalleCommands.cs" />
     <Compile Include="Database\Configuracion.cs" />
@@ -60,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClienteServices.cs" />
+    <Compile Include="Services\EmpleadoServices.cs" />
+    <Compile Include="Services\ProductoServices.cs" />
     <Compile Include="Services\VentaDetalleServices.cs" />
     <Compile Include="Services\VentaServices.cs" />
     <EmbeddedResource Include="Form1.resx">
